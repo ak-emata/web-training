@@ -20,15 +20,32 @@ body {
   width: 220px;
   height: 279px;
   position: relative;
+  display: inline-block;
   color: white;
+  border-radius: 20px;
+}
+
+.card-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  background: linear-gradient(
+    179.8deg,
+    rgba(255, 255, 255, 0) 50.33%,
+    #000000 97.62%
+  );
   border-radius: 20px;
 }
 
 .card-name {
   position: absolute;
-  bottom: 0%;
+  bottom: 28px;
   text-align: center;
   width: 100%;
+  z-index: 1;
 }
 
 img {
