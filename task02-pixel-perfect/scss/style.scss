@@ -13,7 +13,7 @@ body {
   font-size: $font-size;
 }
 
-.grid__container {
+.card__container {
   display: grid;
   grid-template-columns: repeat($card-columns, $card-width);
   column-gap: $card-spacing;
