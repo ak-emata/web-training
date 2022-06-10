@@ -8,12 +8,12 @@
 
 body {
   font-family: $font;
-  font-size: 22px;
+  font-size: $font-size;
 }
 
-.grid-container {
+.grid__container {
   display: grid;
-  grid-template-columns: repeat(4, $card-width);
+  grid-template-columns: repeat($card-columns, $card-width);
   column-gap: $card-spacing;
   row-gap: $card-spacing;
 }
@@ -23,31 +23,31 @@ body {
   height: $card-height;
   position: relative;
   display: inline-block;
-  color: white;
+  color: $card-font-color;
   border-radius: $card-radius;
-}
 
-.card-gradient {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  background: linear-gradient(
-    179.8deg,
-    rgba(255, 255, 255, 0) 50.33%,
-    #000000 97.62%
-  );
-  border-radius: $card-radius;
-}
+  &__gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    background: linear-gradient(
+      179.8deg,
+      rgba(255, 255, 255, 0) 50.33%,
+      #000000 97.62%
+    );
+    border-radius: $card-radius;
+  }
 
-.card-name {
-  position: absolute;
-  bottom: 28px;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
+  &__name {
+    position: absolute;
+    bottom: 28px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 img {
