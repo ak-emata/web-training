@@ -7,15 +7,15 @@
 $font: "Roboto Slab";
 $font-size: 22px;
 
-$primary: true;
+$primary: 1;
 
-@if $primary == true {
-  $color-dark-02: #006096;
-  $color-dark-01: #0c75af;
-  $color-primary: #66b7f1;
-  $color-light-01: #b8e1ff;
-  $color-light-02: #eaf5ff;
-} @else {
+$color-dark-02: #006096;
+$color-dark-01: #0c75af;
+$color-primary: #66b7f1;
+$color-light-01: #b8e1ff;
+$color-light-02: #eaf5ff;
+
+@if $primary == 0 {
   $color-dark-02: #0072ce;
   $color-dark-01: #008dff;
   $color-primary: #00b5e2;

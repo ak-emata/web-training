@@ -5,14 +5,9 @@
 * @summary styles for the implementation of the task #3 of the web training, done by Esteban Mata
 */
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "consts";
 @import "icons";
 @import "config";
 @import "nav";
-
-body {
-  font-family: $font;
-  font-size: $font-size;
-}
