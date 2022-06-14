@@ -1,0 +1,66 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary styles for the sipnosis of the task #3 of the web training, done by Esteban Mata
+*/
+.sipnosis {
+  &__image {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  &--gradient {
+    display: none;
+    visibility: hidden;
+  }
+
+  .collapseee {
+    img {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sipnosis {
+    margin: 0 (0 - $padding-tablet);
+    width: inherit;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .sipnosis {
+    margin: 0 (0 - $padding-mobile);
+
+    &--gradient {
+      visibility: visible;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: block;
+      background: linear-gradient(
+        180deg,
+        rgba(196, 196, 196, 0) 0%,
+        #ffffff 100%
+      );
+    }
+  }
+
+  .collapseee {
+    margin: 0 $padding-mobile;
+    img {
+      display: inline-block;
+      visibility: visible;
+      width: 163px;
+      height: 58px;
+      margin: auto;
+      margin-top: -19px;
+    }
+  }
+}

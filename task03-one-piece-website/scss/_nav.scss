@@ -5,8 +5,7 @@
 * @summary styles for the navigation bar of the task #3 of the web training, done by Esteban Mata
 */
 nav {
-  margin: 0px 170px !important;
-  height: 100px;
+  height: $navbar__height;
   a {
     img {
       width: 163px;
@@ -25,12 +24,17 @@ nav {
 }
 
 .lang {
-  &-selector {
+  &__selector {
     background-color: white;
     border: none;
     width: 90px;
     height: 30px;
     margin: auto;
+
+    &--active {
+      background-color: $color-grey-4;
+    }
+
     img {
       position: relative;
       margin: 0;
@@ -39,9 +43,6 @@ nav {
       width: 30px;
       height: 30px;
     }
-  }
-  &-active {
-    background-color: $color-grey-4;
   }
 }
 
@@ -53,6 +54,7 @@ nav {
   &-toggler {
     border: none;
     padding: 0 !important;
+
     &-icon {
       width: 24px;
       height: 24px;
@@ -72,16 +74,11 @@ nav {
     left: 50%;
     position: absolute;
   }
-  nav {
-    margin: 0px 64px !important;
-    height: 100px;
-  }
 }
 
 @include media-breakpoint-down(sm) {
   nav {
-    margin: 0px 16px !important;
-    height: 78px;
+    height: $navbar__height--mobile;
     a {
       img {
         width: 112px;

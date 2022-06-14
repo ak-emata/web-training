@@ -9151,7 +9151,16 @@ textarea.form-control-lg {
 body {
   font-family: "Roboto Slab";
   font-size: 22px;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 0px 170px !important; }
+
+@media (max-width: 991.98px) {
+  body {
+    padding: 0px 64px !important; } }
+
+@media (max-width: 575.98px) {
+  body {
+    padding: 0px 16px !important; } }
 
 /**
 * All Rights Reserved
@@ -9160,7 +9169,6 @@ body {
 * @summary styles for the navigation bar of the task #3 of the web training, done by Esteban Mata
 */
 nav {
-  margin: 0px 170px !important;
   height: 100px; }
   nav a {
     font-size: 18px; }
@@ -9172,22 +9180,21 @@ nav {
   nav .active {
     color: #0c75af !important; }
 
-.lang-selector {
+.lang__selector {
   background-color: white;
   border: none;
   width: 90px;
   height: 30px;
   margin: auto; }
-  .lang-selector img {
+  .lang__selector--active {
+    background-color: #ececec; }
+  .lang__selector img {
     position: relative;
     margin: 0;
     top: -5px;
     left: 0px;
     width: 30px;
     height: 30px; }
-
-.lang-active {
-  background-color: #ececec; }
 
 .navbar-nav {
   width: 100% !important; }
@@ -9209,15 +9216,60 @@ nav {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     left: 50%;
-    position: absolute; }
-  nav {
-    margin: 0px 64px !important;
-    height: 100px; } }
+    position: absolute; } }
 
 @media (max-width: 575.98px) {
   nav {
-    margin: 0px 16px !important;
     height: 78px; }
     nav a img {
       width: 112px;
       height: 40px; } }
+
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary styles for the sipnosis of the task #3 of the web training, done by Esteban Mata
+*/
+.sipnosis__image {
+  position: relative; }
+  .sipnosis__image img {
+    width: 100%; }
+
+.sipnosis--gradient {
+  display: none;
+  visibility: hidden; }
+
+.sipnosis .collapseee {
+  display: inline-block; }
+  .sipnosis .collapseee img {
+    display: none;
+    visibility: hidden; }
+
+@media (max-width: 991.98px) {
+  .sipnosis {
+    margin: 0 -64px;
+    width: inherit; } }
+
+@media (max-width: 575.98px) {
+  .sipnosis {
+    margin: 0 -16px; }
+    .sipnosis--gradient {
+      visibility: visible;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: block;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(#ffffff));
+      background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #ffffff 100%); }
+  .collapseee {
+    margin: 0 16px; }
+    .collapseee img {
+      display: inline-block;
+      visibility: visible;
+      width: 163px;
+      height: 58px;
+      margin: auto;
+      margin-top: -19px; } }
