@@ -37,9 +37,22 @@
         if (!document.getElementById(elementId).classList.contains("show")) {
           document.getElementById("sipnosisIcon").innerText = "expand_more";
           document.getElementById("sipnosisText").innerText = "Read All";
+          document
+            .getElementById("mobile__logo")
+            .classList.remove("mobile__logo--expanded");
+
+          document
+            .getElementById("collapse__card")
+            .classList.remove("collapse__card--expanded");
         } else {
           document.getElementById("sipnosisIcon").innerText = "expand_less";
           document.getElementById("sipnosisText").innerText = "Read Less";
+          document
+            .getElementById("mobile__logo")
+            .classList.add("mobile__logo--expanded");
+          document
+            .getElementById("collapse__card")
+            .classList.add("collapse__card--expanded");
         }
       }
     </script>
@@ -104,8 +117,8 @@
         <img src="./images/sipnosis.svg" />
       </div>
 
-      <img class="mobile__logo" src="./images/logo.svg" />
-      <div class="collapse__card">
+      <img class="mobile__logo" id="mobile__logo" src="./images/logo.svg" />
+      <div class="collapse__card" id="collapse__card">
         <h1>Sipnosis</h1>
         <p>
           Dawn Island is an island located in the East Blue and where the Goa
@@ -116,7 +129,7 @@
           journey into piracy, as well as the home island of his father, Monkey
           D. Dragon.
         </p>
-        <div class="collapse show" id="SipnosisText">
+        <div class="collapse" id="SipnosisText">
           <p>
             This is also the adopted home of Portgas D. Ace after the death of
             his mother and the home of Sabo and his family.
@@ -131,16 +144,17 @@
             Mary Geoise.
           </p>
         </div>
-        <a
+        <span
           data-bs-toggle="collapse"
           aria-expanded="true"
           aria-controls="SipnosisText"
           id="sipnosisButton"
           onclick="toggleSipnosis('SipnosisText')"
+          class="mx-auto"
         >
           <span class="material-icons" id="sipnosisIcon">expand_more</span>
           <span id="sipnosisText">Read All</span>
-        </a>
+        </span>
       </div>
     </div>
   </body>

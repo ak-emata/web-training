@@ -24,7 +24,7 @@ nav {
   nav {
     .navbar-brand {
       padding: 0 !important;
-      padding-right: $padding-tablet !important;
+      padding-right: (2 * $padding-tablet) !important;
     }
     .navbar-toggler {
       margin-left: $padding-tablet !important;
@@ -39,7 +39,7 @@ nav {
   nav {
     .navbar-brand {
       padding: 0 !important;
-      padding-right: $padding-mobile !important;
+      padding-right: (2 * $padding-mobile) !important;
     }
     .navbar-toggler {
       margin-left: $padding-mobile !important;

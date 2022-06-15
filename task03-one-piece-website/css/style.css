@@ -9162,7 +9162,7 @@ nav .navbar-collapse {
 @media (max-width: 991.98px) {
   nav .navbar-brand {
     padding: 0 !important;
-    padding-right: 64px !important; }
+    padding-right: 128px !important; }
   nav .navbar-toggler {
     margin-left: 64px !important; }
   nav .navbar-collapse {
@@ -9171,7 +9171,7 @@ nav .navbar-collapse {
 @media (max-width: 575.98px) {
   nav .navbar-brand {
     padding: 0 !important;
-    padding-right: 16px !important; }
+    padding-right: 32px !important; }
   nav .navbar-toggler {
     margin-left: 16px !important; }
   nav .navbar-collapse {
@@ -9255,11 +9255,13 @@ nav {
 * @summary styles for the sipnosis of the task #3 of the web training, done by Esteban Mata
 */
 .sipnosis .mobile__logo {
-  display: none;
-  visibility: hidden; }
+  display: none; }
+  .sipnosis .mobile__logo--expanded {
+    display: none; }
 
 .sipnosis__image {
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .sipnosis__image img {
     width: 100%; }
 
@@ -9270,14 +9272,54 @@ nav {
 .sipnosis .collapse {
   margin: 0px; }
 
+.collapse__card {
+  border-radius: 6px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px #b8e1ff;
+          box-shadow: 0px 0px 8px #b8e1ff;
+  padding: 32px 16px; }
+  .collapse__card h1, .collapse__card .h1 {
+    font-weight: 700;
+    font-size: 22px; }
+  .collapse__card p {
+    font-weight: 400;
+    font-size: 16px; }
+
+#sipnosisButton {
+  display: none; }
+  #sipnosisButton span {
+    color: #0c75af;
+    font-weight: 400;
+    font-size: 18px; }
+
+@media (min-width: 992px) {
+  #SipnosisText {
+    display: block; } }
+
 @media (max-width: 991.98px) {
+  .collapse__card {
+    padding: 8px;
+    margin: 0px 64px !important;
+    margin-top: -59px !important;
+    z-index: 10; }
+  #sipnosisButton {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 0.5px solid #0c75af; }
   .sipnosis {
     width: inherit; } }
 
 @media (max-width: 575.98px) {
   .sipnosis .mobile__logo {
-    display: block;
-    visibility: visible;
     position: absolute;
     width: 163px;
     height: 58px;
@@ -9285,6 +9327,8 @@ nav {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    .sipnosis .mobile__logo--expanded {
+      display: block; }
   .sipnosis--gradient {
     visibility: visible;
     position: absolute;
@@ -9299,4 +9343,8 @@ nav {
     display: inline-block; }
   .collapse {
     margin: 0 16px;
-    min-height: 256px; } }
+    min-height: 256px; }
+    .collapse__card {
+      margin-top: 19px !important; }
+      .collapse__card--expanded {
+        margin-top: 72px !important; } }
