@@ -9364,9 +9364,9 @@ nav {
   .sipnosis--gradient::after {
     display: inline-block; }
   .collapse {
-    margin: 0 16px;
     min-height: 256px; }
     .collapse__card {
+      margin: 0px 16px !important;
       margin-top: 19px !important; }
       .collapse__card--expanded {
         margin-top: 72px !important; } }
@@ -9421,3 +9421,11 @@ nav {
     color: #7d7d7d; }
   .search__bar input[type="search"]::placeholder {
     color: #7d7d7d; }
+
+@media (max-width: 991.98px) {
+  .search__bar {
+    margin: 32px 64px !important; } }
+
+@media (max-width: 575.98px) {
+  .search__bar {
+    margin: 48px 16px !important; } }

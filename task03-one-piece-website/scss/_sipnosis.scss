@@ -137,10 +137,11 @@
   }
 
   .collapse {
-    margin: 0 $padding-mobile;
     min-height: 256px;
 
     &__card {
+      margin: 0px $padding-mobile !important;
+
       &--expanded {
         margin-top: 72px !important;
       }
