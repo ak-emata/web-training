@@ -9429,3 +9429,133 @@ nav {
 @media (max-width: 575.98px) {
   .search__bar {
     margin: 48px 16px !important; } }
+
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary styles for the data sections of the task #3 of the web training, done by Esteban Mata
+*/
+.data__section {
+  margin: 0px 170px !important;
+  margin-bottom: 48px !important; }
+  .data__section__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 32px !important; }
+    .data__section__heading h2, .data__section__heading .h2 {
+      font: "Roboto Slab";
+      font-weight: 400;
+      font-size: 28px;
+      color: #171717; }
+    .data__section__heading button {
+      margin-left: auto;
+      color: #0c75af;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      background-color: transparent;
+      border: none; }
+  .data__section .card__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+    overflow: scroll; }
+
+@media (max-width: 991.98px) {
+  .data__section {
+    margin: 0px 64px !important; } }
+
+@media (max-width: 575.98px) {
+  .data__section {
+    margin: 0px !important;
+    margin-left: 16px !important; }
+    .data__section__heading {
+      margin-right: 16px !important; }
+    .data__section .card__container {
+      gap: 15px; } }
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the character cards of the task #3 of the web training, done by Esteban Mata
+ */
+.card {
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: auto !important;
+  width: 219px;
+  height: 279px;
+  min-width: 219px;
+  min-height: 279px; }
+  .card span {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px; }
+  .card__gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    background: linear-gradient(179.8deg, rgba(255, 255, 255, 0) 50.33%, #000000 97.62%);
+    border-radius: inherit; }
+  .card__name {
+    position: absolute;
+    bottom: 28px;
+    text-align: center;
+    width: 100%;
+    z-index: 1; }
+  .card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: inherit; }
+
+@media (max-width: 991.98px) {
+  .card {
+    width: 145px;
+    height: 184px;
+    min-width: 145px;
+    min-height: 184px; }
+    .card span {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.1px; } }
+
+@media (max-width: 575.98px) {
+  .card {
+    width: 181px;
+    height: 231px;
+    min-width: 181px;
+    min-height: 231px; }
+    .card span {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.02em; } }
