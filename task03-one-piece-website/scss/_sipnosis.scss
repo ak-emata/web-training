@@ -5,6 +5,11 @@
 * @summary styles for the sipnosis of the task #3 of the web training, done by Esteban Mata
 */
 .sipnosis {
+  .mobile__logo {
+    display: none;
+    visibility: hidden;
+  }
+
   &__image {
     position: relative;
     img {
@@ -17,50 +22,47 @@
     visibility: hidden;
   }
 
-  .collapseee {
-    img {
-      display: none;
-      visibility: hidden;
-    }
+  .collapse {
+    margin: 0px;
   }
 }
 
 @include media-breakpoint-down(lg) {
   .sipnosis {
-    margin: 0 (0 - $padding-tablet);
     width: inherit;
   }
 }
 
 @include media-breakpoint-down(sm) {
   .sipnosis {
-    margin: 0 (0 - $padding-mobile);
+    .mobile__logo {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      width: 163px;
+      height: 58px;
+      margin-top: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     &--gradient {
       visibility: visible;
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 65%;
       left: 0;
-      top: 0;
+      bottom: 0;
       display: block;
-      background: linear-gradient(
-        180deg,
-        rgba(196, 196, 196, 0) 0%,
-        #ffffff 100%
-      );
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #ffffff 100%);
+    }
+    &--gradient::after {
+      display: inline-block;
     }
   }
 
-  .collapseee {
+  .collapse {
     margin: 0 $padding-mobile;
-    img {
-      display: inline-block;
-      visibility: visible;
-      width: 163px;
-      height: 58px;
-      margin: auto;
-      margin-top: -19px;
-    }
+    min-height: 256px;
   }
 }

@@ -4,22 +4,48 @@
 * Contact us at contact@akurey.com
 * @summary configs for the styles for the implementation of the task #3 of the web training, done by Esteban Mata
 */
-body {
+nav {
+  .navbar-brand {
+    padding-left: $padding-desktop !important;
+  }
+
+  .navbar-collapse {
+    padding-right: $padding-desktop !important;
+  }
+}
+
+* {
   font-family: $font;
   font-size: $font-size;
   font-weight: 700;
-
-  padding: 0px $padding-desktop !important;
 }
 
 @include media-breakpoint-down(lg) {
-  body {
-    padding: 0px $padding-tablet !important;
+  nav {
+    .navbar-brand {
+      padding: 0 !important;
+      padding-right: $padding-tablet !important;
+    }
+    .navbar-toggler {
+      margin-left: $padding-tablet !important;
+    }
+    .navbar-collapse {
+      padding-right: 0 !important;
+    }
   }
 }
 
 @include media-breakpoint-down(sm) {
-  body {
-    padding: 0px $padding-mobile !important;
+  nav {
+    .navbar-brand {
+      padding: 0 !important;
+      padding-right: $padding-mobile !important;
+    }
+    .navbar-toggler {
+      margin-left: $padding-mobile !important;
+    }
+    .navbar-collapse {
+      padding-right: 0px !important;
+    }
   }
 }

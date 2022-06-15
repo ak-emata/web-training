@@ -11,11 +11,10 @@ nav {
       width: 163px;
       height: 58px;
     }
-
-    font-size: 18px;
   }
 
   .nav-link {
+    font-size: 18px;
     color: $color-grey-0 !important;
   }
   .active {
@@ -24,6 +23,14 @@ nav {
 }
 
 .lang {
+  &__name {
+    font-size: 18px;
+    color: $color-grey-0 !important;
+    display: none;
+    visibility: hidden;
+    margin: auto;
+  }
+
   &__selector {
     background-color: white;
     border: none;
@@ -38,7 +45,7 @@ nav {
     img {
       position: relative;
       margin: 0;
-      top: -5px;
+      top: -2px;
       left: 0px;
       width: 30px;
       height: 30px;
@@ -69,10 +76,15 @@ nav {
 }
 
 @include media-breakpoint-down(lg) {
-  .navbar-brand {
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
+  .lang {
+    &__name {
+      display: inline-flex;
+      visibility: visible;
+    }
+
+    &__selector {
+      width: 170px;
+    }
   }
 }
 

@@ -9148,19 +9148,34 @@ textarea.form-control-lg {
 * Contact us at contact@akurey.com
 * @summary configs for the styles for the implementation of the task #3 of the web training, done by Esteban Mata
 */
-body {
+nav .navbar-brand {
+  padding-left: 170px !important; }
+
+nav .navbar-collapse {
+  padding-right: 170px !important; }
+
+* {
   font-family: "Roboto Slab";
   font-size: 22px;
-  font-weight: 700;
-  padding: 0px 170px !important; }
+  font-weight: 700; }
 
 @media (max-width: 991.98px) {
-  body {
-    padding: 0px 64px !important; } }
+  nav .navbar-brand {
+    padding: 0 !important;
+    padding-right: 64px !important; }
+  nav .navbar-toggler {
+    margin-left: 64px !important; }
+  nav .navbar-collapse {
+    padding-right: 0 !important; } }
 
 @media (max-width: 575.98px) {
-  body {
-    padding: 0px 16px !important; } }
+  nav .navbar-brand {
+    padding: 0 !important;
+    padding-right: 16px !important; }
+  nav .navbar-toggler {
+    margin-left: 16px !important; }
+  nav .navbar-collapse {
+    padding-right: 0px !important; } }
 
 /**
 * All Rights Reserved
@@ -9170,15 +9185,21 @@ body {
 */
 nav {
   height: 100px; }
-  nav a {
-    font-size: 18px; }
-    nav a img {
-      width: 163px;
-      height: 58px; }
+  nav a img {
+    width: 163px;
+    height: 58px; }
   nav .nav-link {
+    font-size: 18px;
     color: #575757 !important; }
   nav .active {
     color: #0c75af !important; }
+
+.lang__name {
+  font-size: 18px;
+  color: #575757 !important;
+  display: none;
+  visibility: hidden;
+  margin: auto; }
 
 .lang__selector {
   background-color: white;
@@ -9191,7 +9212,7 @@ nav {
   .lang__selector img {
     position: relative;
     margin: 0;
-    top: -5px;
+    top: -2px;
     left: 0px;
     width: 30px;
     height: 30px; }
@@ -9212,11 +9233,13 @@ nav {
   margin: 0 !important; }
 
 @media (max-width: 991.98px) {
-  .navbar-brand {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    left: 50%;
-    position: absolute; } }
+  .lang__name {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    visibility: visible; }
+  .lang__selector {
+    width: 170px; } }
 
 @media (max-width: 575.98px) {
   nav {
@@ -9231,6 +9254,10 @@ nav {
 * Contact us at contact@akurey.com
 * @summary styles for the sipnosis of the task #3 of the web training, done by Esteban Mata
 */
+.sipnosis .mobile__logo {
+  display: none;
+  visibility: hidden; }
+
 .sipnosis__image {
   position: relative; }
   .sipnosis__image img {
@@ -9240,36 +9267,36 @@ nav {
   display: none;
   visibility: hidden; }
 
-.sipnosis .collapseee {
-  display: inline-block; }
-  .sipnosis .collapseee img {
-    display: none;
-    visibility: hidden; }
+.sipnosis .collapse {
+  margin: 0px; }
 
 @media (max-width: 991.98px) {
   .sipnosis {
-    margin: 0 -64px;
     width: inherit; } }
 
 @media (max-width: 575.98px) {
-  .sipnosis {
-    margin: 0 -16px; }
-    .sipnosis--gradient {
-      visibility: visible;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      display: block;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(#ffffff));
-      background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #ffffff 100%); }
-  .collapseee {
-    margin: 0 16px; }
-    .collapseee img {
-      display: inline-block;
-      visibility: visible;
-      width: 163px;
-      height: 58px;
-      margin: auto;
-      margin-top: -19px; } }
+  .sipnosis .mobile__logo {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 163px;
+    height: 58px;
+    margin-top: -19px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .sipnosis--gradient {
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#ffffff));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #ffffff 100%); }
+  .sipnosis--gradient::after {
+    display: inline-block; }
+  .collapse {
+    margin: 0 16px;
+    min-height: 256px; } }
