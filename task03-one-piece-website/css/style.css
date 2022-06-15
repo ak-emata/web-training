@@ -9275,8 +9275,6 @@ nav {
 .collapse__card {
   border-radius: 6px;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 8px #b8e1ff;
-          box-shadow: 0px 0px 8px #b8e1ff;
   padding: 32px 16px; }
   .collapse__card h1, .collapse__card .h1 {
     font-weight: 700;
@@ -9294,12 +9292,34 @@ nav {
 
 @media (min-width: 992px) {
   #SipnosisText {
-    display: block; } }
+    display: block; }
+  .sipnosis {
+    margin: 0 170px !important;
+    margin-top: 2px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-filter: drop-shadow(0px 0px 8px #b8e1ff);
+            filter: drop-shadow(0px 0px 8px #b8e1ff); }
+    .sipnosis__image {
+      border-radius: 16px 0px 0px 16px;
+      min-height: 100%; }
+      .sipnosis__image img {
+        min-height: 100%;
+        border-radius: inherit;
+        -o-object-fit: cover;
+           object-fit: cover; }
+  .collapse__card {
+    width: 300px;
+    line-height: 20px;
+    border-radius: 0px 6px 6px 0px; } }
 
 @media (max-width: 991.98px) {
   .collapse__card {
     padding: 8px;
     margin: 0px 64px !important;
+    -webkit-box-shadow: 0px 0px 8px #b8e1ff;
+            box-shadow: 0px 0px 8px #b8e1ff;
     margin-top: -59px !important;
     z-index: 10; }
   #sipnosisButton {
