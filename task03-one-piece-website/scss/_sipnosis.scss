@@ -64,6 +64,7 @@
   .sipnosis {
     margin: 0 $padding-desktop !important;
     margin-top: 2px !important;
+    justify-content: center;
     display: flex;
     filter: drop-shadow(0px 0px 8px $color-light-01);
     &__image {

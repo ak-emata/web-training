@@ -40,6 +40,7 @@
 @include media-breakpoint-down(lg) {
   .data__section {
     margin: 0px $padding-tablet !important;
+    margin-bottom: 48px !important;
   }
 }
 
@@ -47,6 +48,8 @@
   .data__section {
     margin: 0px !important;
     margin-left: $padding-mobile !important;
+    margin-bottom: 48px !important;
+
     &__heading {
       margin-right: $padding-mobile !important;
     }

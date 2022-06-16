@@ -50,6 +50,9 @@
           document
             .getElementById("collapse__card")
             .classList.remove("collapse__card--expanded");
+          document
+            .getElementsByName("islandLike")
+            .forEach((elem) => elem.classList.remove("islandLike"));
         } else {
           document.getElementById("sipnosisIcon").innerText = "expand_less";
           document.getElementById("sipnosisText").innerText = "Read Less";
@@ -59,6 +62,9 @@
           document
             .getElementById("collapse__card")
             .classList.add("collapse__card--expanded");
+          document
+            .getElementsByName("islandLike")
+            .forEach((elem) => elem.classList.add("islandLike"));
         }
       }
     </script>
@@ -210,6 +216,49 @@
       <div class="data__section__heading">
         <h2>Islands</h2>
         <button>See All</button>
+      </div>
+      <div class="card__container">
+        <a href="" class="island__card">
+          <div class="island__card__textContainer">
+            <span class="island__card__name"> Dawn Island</span>
+            <div class="island__card__locationContainer">
+              <span class="material-icons"> place </span>
+              <span class="island__card__location">East Blue </span>
+            </div>
+            <span class="material-icons" name="islandLike"> favorite </span>
+          </div>
+          <img src="./images/dawn.svg" alt="Dawn Island from One Piece" />
+        </a>
+
+        <a href="" class="island__card">
+          <div class="island__card__textContainer">
+            <span class="island__card__name"> Reverse Mountain</span>
+            <div class="island__card__locationContainer">
+              <span class="material-icons"> place </span>
+              <span class="island__card__location">Red Line </span>
+            </div>
+            <span class="material-icons" name="islandLike"> favorite </span>
+          </div>
+          <img
+            src="./images/reverse.svg"
+            alt="Reverse Mountain from One Piece"
+          />
+        </a>
+
+        <a href="" class="island__card">
+          <div class="island__card__textContainer">
+            <span class="island__card__name"> Reverse Mountain</span>
+            <div class="island__card__locationContainer">
+              <span class="material-icons"> place </span>
+              <span class="island__card__location">Red Line </span>
+            </div>
+            <span class="material-icons" name="islandLike"> favorite </span>
+          </div>
+          <img
+            src="./images/reverse.svg"
+            alt="Reverse Mountain from One Piece"
+          />
+        </a>
       </div>
     </div>
 

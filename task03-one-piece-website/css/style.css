@@ -9298,6 +9298,9 @@ nav {
   .sipnosis {
     margin: 0 170px !important;
     margin-top: 2px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9477,12 +9480,14 @@ nav {
 
 @media (max-width: 991.98px) {
   .data__section {
-    margin: 0px 64px !important; } }
+    margin: 0px 64px !important;
+    margin-bottom: 48px !important; } }
 
 @media (max-width: 575.98px) {
   .data__section {
     margin: 0px !important;
-    margin-left: 16px !important; }
+    margin-left: 16px !important;
+    margin-bottom: 48px !important; }
     .data__section__heading {
       margin-right: 16px !important; }
     .data__section .card__container {
@@ -9560,3 +9565,113 @@ nav {
       font-size: 18px;
       line-height: 21px;
       letter-spacing: -0.02em; } }
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the island cards of the task #3 of the web training, done by Esteban Mata
+ */
+.island__card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px; }
+  .island__card__textContainer {
+    position: absolute;
+    border-radius: 6px;
+    background-color: rgba(0, 96, 150, 0.59);
+    padding: 0px 24px !important;
+    margin: 12px !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px); }
+    .island__card__textContainer .islandLike {
+      display: none;
+      width: 15px;
+      margin-left: auto !important;
+      right: 15px !important;
+      top: 33%;
+      color: #f30000;
+      position: absolute; }
+    .island__card__textContainer span[name="islandLike"] {
+      display: none; }
+  .island__card__locationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .island__card__locationContainer .material-icons {
+      color: white;
+      font-size: 20px; }
+  .island__card__location {
+    color: #f4f4f4;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.15px; }
+  .island__card__name {
+    color: white;
+    letter-spacing: 0.1px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px; }
+  .island__card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: inherit; }
+
+@media (max-width: 991.98px) {
+  .island__card {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px; }
+    .island__card__location {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.25px; }
+    .island__card__name {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.1px; }
+    .island__card__textContainer {
+      padding: 0px 16px !important; } }
+
+@media (max-width: 575.98px) {
+  .island__card {
+    width: 195px;
+    height: 195px;
+    min-width: 195px;
+    min-height: 195px; }
+    .island__card__location {
+      color: #f4f4f4;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.15px; }
+    .island__card__name {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.4px; }
+    .island__card__textContainer .islandLike {
+      display: inline-block !important; } }
