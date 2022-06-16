@@ -9775,3 +9775,48 @@ nav {
   .mistObject__card img {
     width: 175px;
     height: 132px; } }
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the character cards of the task #3 of the web training, done by Esteban Mata
+ */
+.footer {
+  height: 271px;
+  background-color: #0c75af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer img {
+    width: 97px;
+    height: 89px; }
+  .footer p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: white;
+    margin: 32px !important;
+    width: 286px; }
+
+@media (max-width: 575.98px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer p {
+      text-align: center; } }
