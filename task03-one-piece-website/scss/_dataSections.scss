@@ -35,12 +35,21 @@
     gap: 20px;
     overflow: scroll;
   }
+  .card__container--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+  }
 }
 
 @include media-breakpoint-down(lg) {
   .data__section {
     margin: 0px $padding-tablet !important;
     margin-bottom: 48px !important;
+
+    .card__container--grid {
+      gap: 20px 20px;
+    }
   }
 }
 
@@ -55,6 +64,12 @@
     }
     .card__container {
       gap: 15px;
+    }
+
+    .card__container--grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-right: $padding-mobile !important;
     }
   }
 }

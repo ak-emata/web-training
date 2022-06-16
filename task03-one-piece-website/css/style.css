@@ -9477,11 +9477,19 @@ nav {
             align-items: flex-start;
     gap: 20px;
     overflow: scroll; }
+  .data__section .card__container--grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 32px 20px; }
 
 @media (max-width: 991.98px) {
   .data__section {
     margin: 0px 64px !important;
-    margin-bottom: 48px !important; } }
+    margin-bottom: 48px !important; }
+    .data__section .card__container--grid {
+      gap: 20px 20px; } }
 
 @media (max-width: 575.98px) {
   .data__section {
@@ -9491,7 +9499,12 @@ nav {
     .data__section__heading {
       margin-right: 16px !important; }
     .data__section .card__container {
-      gap: 15px; } }
+      gap: 15px; }
+    .data__section .card__container--grid {
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+      gap: 16px;
+      margin-right: 16px !important; } }
 
 /**
  * All Rights Reserved
@@ -9675,3 +9688,90 @@ nav {
       letter-spacing: 0.4px; }
     .island__card__textContainer .islandLike {
       display: inline-block !important; } }
+
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the Mist Objects of the task #3 of the web training, done by Esteban Mata
+ */
+.mistObject__card {
+  position: relative; }
+  .mistObject__card__name {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: white; }
+  .mistObject__card__description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: white; }
+  .mistObject__card__textContainer {
+    position: absolute;
+    border-radius: 0px 9px 9px 0px;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+    background: rgba(0, 96, 150, 0.59);
+    padding: 12px;
+    top: 0;
+    height: 100%;
+    right: 0;
+    left: 163px;
+    overflow-y: scroll;
+    min-width: 0; }
+  .mistObject__card img {
+    width: 263px;
+    height: 254px; }
+
+@media (max-width: 991.98px) {
+  .mistObject__card__name {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1px; }
+  .mistObject__card__description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px; }
+  .mistObject__card__textContainer {
+    padding: 8px;
+    left: 110px; }
+  .mistObject__card img {
+    width: 181px;
+    height: 175px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px; } }
+
+@media (max-width: 575.98px) {
+  .mistObject__card__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.5px; }
+  .mistObject__card__description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px; }
+  .mistObject__card__textContainer {
+    left: 117px; }
+  .mistObject__card img {
+    width: 175px;
+    height: 132px; } }
