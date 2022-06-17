@@ -1,0 +1,42 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the character cards of the task #3 of the web training, done by Esteban Mata
+ */
+
+.footer {
+  height: 271px;
+  background-color: $color-dark-01;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 97px;
+    height: 89px;
+  }
+
+  p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+
+    color: white;
+    margin: 32px !important;
+    width: 286px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    flex-direction: column;
+    p {
+      text-align: center;
+    }
+  }
+}
