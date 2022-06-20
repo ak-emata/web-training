@@ -9,12 +9,14 @@ import React, { Component } from "react";
 import "./navbarLogo.scss";
 import logo from "../../images/logo.svg";
 
+import Navbar from "react-bootstrap/Navbar";
+
 class NavbarLogo extends Component {
   render() {
     return (
-      <a className="navbar-brand mx-auto" href="/">
+      <Navbar.Brand href={this.props.redirectTo} className="mx-auto">
         <img src={logo} alt="One Piece Logo" />
-      </a>
+      </Navbar.Brand>
     );
   }
 }

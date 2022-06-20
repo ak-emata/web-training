@@ -1,11 +1,11 @@
 import "./App.scss";
 
-import Navbar from "./components/navbar";
+import CustomNavbar from "./components/customNavbar";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <CustomNavbar />
     </div>
   );
 }

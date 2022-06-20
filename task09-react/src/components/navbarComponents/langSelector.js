@@ -8,12 +8,17 @@
 import React, { Component } from "react";
 import spainFlag from "../../images/flags/spain.svg";
 import usaFlag from "../../images/flags/usa.svg";
+import "./langSelector.scss";
 
 class LangSelector extends Component {
   render() {
     return (
-      <button className="lang__selector">
-        <span className="lang__name"> Spanish </span>
+      <button
+        className={`lang__selector ${
+          this.props.active ? "lang__selector--active" : ""
+        }`}
+      >
+        <span className="lang__name"> {this.props.language} </span>
         {this.props.language === "English" ? (
           <img src={usaFlag} alt="" />
         ) : (
@@ -23,5 +28,9 @@ class LangSelector extends Component {
     );
   }
 }
+
+LangSelector.defalutProps = {
+  active: false,
+};
 
 export default LangSelector;

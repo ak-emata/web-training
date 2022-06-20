@@ -7,16 +7,24 @@
 
 import React, { Component } from "react";
 
+import Nav from "react-bootstrap/Nav";
+import "./navItem.scss";
+
 class NavItem extends Component {
   render() {
     return (
-      <li className="nav-item">
-        <a href={this.props.redirectTo} className="nav-link">
-          {this.props.text}
-        </a>
-      </li>
+      <Nav.Link
+        className={`${this.props.active ? "nav-link--active" : ""}`}
+        href={this.props.redirectTo}
+      >
+        {this.props.text}
+      </Nav.Link>
     );
   }
 }
+
+NavItem.defaultProps = {
+  active: false,
+};
 
 export default NavItem;

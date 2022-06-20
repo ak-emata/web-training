@@ -1,0 +1,23 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the navbarLogo component
+ */
+@import "../../styles/styles.scss";
+
+.navbar-brand {
+  img {
+    width: 163px;
+    height: 58px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-brand {
+    img {
+      width: 112px;
+      height: 40px;
+    }
+  }
+}
