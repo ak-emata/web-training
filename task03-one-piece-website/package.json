@@ -1,0 +1,29 @@
+{
+  "name": "task03-one-piece-website",
+  "version": "1.0.0",
+  "description": "Task 3 of the Web Training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emata28/web-training.git"
+  },
+  "author": "Esteban Mata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emata28/web-training/issues"
+  },
+  "homepage": "https://github.com/emata28/web-training#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

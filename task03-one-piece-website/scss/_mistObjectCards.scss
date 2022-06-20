@@ -1,0 +1,120 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the Mist Objects of the task #3 of the web training, done by Esteban Mata
+ */
+.mistObject {
+  &__card {
+    position: relative;
+
+    &__name {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: white;
+    }
+
+    &__description {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      color: white;
+    }
+
+    &__textContainer {
+      position: absolute;
+
+      border-radius: 0px 9px 9px 0px;
+      backdrop-filter: blur(6px);
+      background: rgba($color-dark-02, 0.59);
+      padding: 12px;
+      top: 0;
+      height: 100%;
+      right: 0;
+      left: 163px;
+      overflow-y: scroll;
+      min-width: 0;
+    }
+
+    img {
+      width: 263px;
+      height: 254px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .mistObject {
+    &__card {
+      &__name {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+      }
+
+      &__description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+      }
+
+      &__textContainer {
+        padding: 8px;
+        left: 110px;
+      }
+
+      img {
+        width: 181px;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .mistObject {
+    &__card {
+      &__name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      &__description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+      }
+
+      &__textContainer {
+        left: 117px;
+      }
+
+      img {
+        width: 175px;
+        height: 132px;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+* @summary styles for the character cards of the task #3 of the web training, done by Esteban Mata
+ */
+.character {
+  &__card {
+    display: inline-block;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: auto !important;
+    width: 219px;
+    height: 279px;
+    min-width: 219px;
+    min-height: 279px;
+    position: relative;
+
+    span {
+      font-family: "Roboto Slab";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__gradient {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      background: linear-gradient(
+        179.8deg,
+        rgba(255, 255, 255, 0) 50.33%,
+        #000000 97.62%
+      );
+      border-radius: inherit;
+    }
+
+    &__name {
+      position: absolute;
+      bottom: 28px;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .character {
+    &__card {
+      span {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        letter-spacing: 0.1px;
+      }
+      width: 145px;
+      height: 184px;
+      min-width: 145px;
+      min-height: 184px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .character {
+    &__card {
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+      }
+      width: 181px;
+      height: 231px;
+      min-width: 181px;
+      min-height: 231px;
+    }
+  }
+}
