@@ -10,8 +10,8 @@ import React, { Component } from "react";
 class NavItem extends Component {
   render() {
     return (
-      <li class="nav-item">
-        <a href={this.props.redirectTo} class="nav-link">
+      <li className="nav-item">
+        <a href={this.props.redirectTo} className="nav-link">
           {this.props.text}
         </a>
       </li>

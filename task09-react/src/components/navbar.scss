@@ -11,6 +11,7 @@ $navbar__height--mobile: 78px;
 
 nav {
   height: $navbar__height;
+  padding: 0 16px !important;
   a {
     img {
       width: 163px;

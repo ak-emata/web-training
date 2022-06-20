@@ -12,7 +12,7 @@ import logo from "../../images/logo.svg";
 class NavbarLogo extends Component {
   render() {
     return (
-      <a class="navbar-brand mx-auto" href="/">
+      <a className="navbar-brand mx-auto" href="/">
         <img src={logo} alt="One Piece Logo" />
       </a>
     );
