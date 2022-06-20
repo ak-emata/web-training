@@ -1,0 +1,60 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary styles for the implementation of the task #2 of the web training, done by Esteban Mata
+*/
+
+@import "config";
+@import "flex";
+
+body {
+  font-family: $font;
+  font-size: $font-size;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat($card-columns, $card-width);
+  column-gap: $card-spacing;
+  row-gap: $card-spacing;
+}
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  position: relative;
+  display: inline-block;
+  color: $card-font-color;
+  border-radius: $card-radius;
+
+  &__gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    background: linear-gradient(
+      179.8deg,
+      rgba(255, 255, 255, 0) 50.33%,
+      #000000 97.62%
+    );
+    border-radius: $card-radius;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 28px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+  border-radius: inherit;
+}

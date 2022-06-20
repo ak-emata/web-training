@@ -1,0 +1,7 @@
+.card__container--flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: $card-spacing;
+  margin-top: $card-spacing;
+}
