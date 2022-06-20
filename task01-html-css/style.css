@@ -1,0 +1,56 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary styles for the implementation of the task #1 of the web training, done by Esteban Mata
+*/
+body {
+  font-family: "Roboto Slab";
+  font-size: 22px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.card {
+  width: 220px;
+  height: 279px;
+  position: relative;
+  display: inline-block;
+  color: white;
+  border-radius: 20px;
+}
+
+.card-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  background: linear-gradient(
+    179.8deg,
+    rgba(255, 255, 255, 0) 50.33%,
+    #000000 97.62%
+  );
+  border-radius: 20px;
+}
+
+.card-name {
+  position: absolute;
+  bottom: 28px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: initial;
+  border-radius: inherit;
+}
