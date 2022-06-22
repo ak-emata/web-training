@@ -1,0 +1,93 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the collapse card component
+ */
+
+@import "../../styles/styles.scss";
+
+.collapse {
+  margin: 0px;
+
+  &__card {
+    border-radius: 6px;
+    background-color: white;
+    padding: 32px 16px;
+    h1 {
+      font-weight: 700;
+      font-size: 22px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      font-family: "Roboto";
+      letter-spacing: 0.25px;
+    }
+  }
+}
+#sipnosisicon {
+  width: 24px;
+  height: 24px;
+  fill: $color-dark-01;
+}
+#sipnosisButton {
+  display: none;
+  background-color: white;
+  border-radius: 0px;
+  border-style: solid none none none;
+  border-color: $color-dark-01;
+  border-width: 1px;
+  color: $color-dark-01;
+
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@include media-breakpoint-up(lg) {
+  #SipnosisText {
+    display: block;
+  }
+
+  .collapse {
+    display: block !important;
+    &__card {
+      width: 300px;
+      line-height: 20px;
+      border-radius: 0px 6px 6px 0px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .collapse__card {
+    padding: 8px;
+    margin: 0px $padding-tablet !important;
+    box-shadow: 0px 0px 8px $color-light-01;
+    margin-top: -59px !important;
+    z-index: 10;
+  }
+
+  #sipnosisButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid $color-dark-01;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .collapse {
+    min-height: 256px;
+
+    &__card {
+      margin: 0px $padding-mobile !important;
+
+      &--expanded {
+        margin-top: 72px !important;
+      }
+      margin-top: 19px !important;
+    }
+  }
+}

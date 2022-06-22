@@ -2,7 +2,7 @@
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
  * Contact us at contact@akurey.com
- * @summary navbar component
+ * @summary custom navbar component, using bootstrap components
  */
 import React, { Component } from "react";
 import "./customNavbar.scss";
