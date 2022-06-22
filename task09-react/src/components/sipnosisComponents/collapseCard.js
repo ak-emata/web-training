@@ -16,7 +16,7 @@ import Button from "react-bootstrap/Button";
 class CollapseCard extends Component {
   render() {
     return (
-      <>
+      <div className={`${this.props.open ? "shownLogo" : ""}`}>
         <div className="collapse__card" id="collapse__card">
           <h1>Sipnosis</h1>
           <p>
@@ -60,7 +60,7 @@ class CollapseCard extends Component {
             {this.props.open ? "Read Less" : "Read All"}
           </Button>
         </div>
-      </>
+      </div>
     );
   }
 }

@@ -5,10 +5,10 @@ import Sipnosis from "./components/sipnosis";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <CustomNavbar />
       <Sipnosis />
-    </div>
+    </>
   );
 }
 

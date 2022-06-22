@@ -25,6 +25,7 @@ class Sipnosis extends Component {
   openCard() {
     this.setState({ cardIsOpen: !this.state.cardIsOpen });
   }
+
   render() {
     return (
       <section className="sipnosis">
