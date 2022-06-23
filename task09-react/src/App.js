@@ -45,6 +45,18 @@ class App extends Component {
           amountToShow={4}
           data={this.state.data.characters}
         />
+
+        <DataSection
+          section="Islands"
+          amountToShow={3}
+          data={this.state.data.islands}
+        />
+
+        <DataSection
+          section="Mist Objects"
+          amountToShow={4}
+          data={this.state.data.mistObjects}
+        />
       </>
     );
   }

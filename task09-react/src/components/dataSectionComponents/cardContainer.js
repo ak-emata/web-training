@@ -7,8 +7,9 @@
 
 import React, { Component } from "react";
 import "./cardContainer";
-import CharacterCard from "./cardsComponents/characterCard";
 
+import CharacterCard from "./cardsComponents/characterCard";
+import IslandCard from "./cardsComponents/islandCard";
 class CardContainer extends Component {
   constructor(props) {
     super(props);
@@ -41,11 +42,22 @@ class CardContainer extends Component {
         switch (this.props.section) {
           case "Characters":
             elements.push(
-              <CharacterCard name={element.name} image={element.img} />
+              <CharacterCard
+                name={element.name}
+                image={element.img}
+                key={element.name}
+              />
             );
             break;
           case "Islands":
-            elements.push(<div></div>);
+            elements.push(
+              <IslandCard
+                name={element.name}
+                image={element.img}
+                location={element.Location}
+                key={element.name}
+              />
+            );
             break;
           //return "islandsContainer";
 
@@ -67,7 +79,7 @@ class CardContainer extends Component {
   render() {
     return (
       <div
-        class={`${
+        className={`${
           this.props.section === "Mist Objects"
             ? "card__container--grid"
             : "card__container"

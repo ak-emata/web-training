@@ -14,7 +14,7 @@ import CardContainer from "./dataSectionComponents/cardContainer";
 class DataSection extends Component {
   render() {
     return (
-      <div class="data__section">
+      <div className="data__section">
         <DataSectionHeading section={this.props.section} />
         <CardContainer
           section={this.props.section}
