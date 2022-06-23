@@ -6,6 +6,7 @@ import CustomNavbar from "./components/customNavbar";
 import Sipnosis from "./components/sipnosis";
 import Searchbar from "./components/searchbar";
 import DataSection from "./components/dataSection";
+import Footer from "./components/footer";
 
 class App extends Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class App extends Component {
           amountToShow={4}
           data={this.state.data.mistObjects}
         />
+        <Footer />
       </>
     );
   }
