@@ -6,7 +6,7 @@
  */
 
 import React, { Component } from "react";
-import "./collapseCard.scss";
+import "./collapseCard";
 
 import { ExpandMoreSVGIcon, ExpandLessSVGIcon } from "@react-md/material-icons";
 

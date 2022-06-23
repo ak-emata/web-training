@@ -6,7 +6,7 @@
  */
 
 import React, { Component } from "react";
-import "./navbarLogo.scss";
+import "./navbarLogo";
 import logo from "../../images/logo.svg";
 
 import Navbar from "react-bootstrap/Navbar";

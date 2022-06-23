@@ -5,7 +5,7 @@
  * @summary custom navbar component, using bootstrap components
  */
 import React, { Component } from "react";
-import "./customNavbar.scss";
+import "./customNavbar";
 
 import NavbarLogo from "./navbarComponents/navbarLogo";
 import LangSelector from "./navbarComponents/langSelector";

@@ -4,7 +4,6 @@
  * Contact us at contact@akurey.com
  * @summary styles for the navbar component
  */
-@import "../styles/styles.scss";
 
 nav {
   height: $navbar__height;
@@ -55,3 +54,7 @@ nav {
     height: $navbar__height--mobile;
   }
 }
+
+@import "./navbarComponents/langSelector";
+@import "./navbarComponents/navbarLogo";
+@import "./navbarComponents/navItem";

@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 import spainFlag from "../../images/flags/spain.svg";
 import usaFlag from "../../images/flags/usa.svg";
-import "./langSelector.scss";
+import "./langSelector";
 
 class LangSelector extends Component {
   render() {

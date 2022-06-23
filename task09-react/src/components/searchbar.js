@@ -6,7 +6,7 @@
  */
 
 import React, { Component } from "react";
-import "./searchbar.scss";
+import "./searchbar";
 
 import { SearchSVGIcon } from "@react-md/material-icons";
 

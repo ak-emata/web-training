@@ -8,7 +8,7 @@
 import React, { Component } from "react";
 
 import Nav from "react-bootstrap/Nav";
-import "./navItem.scss";
+import "./navItem";
 
 class NavItem extends Component {
   render() {

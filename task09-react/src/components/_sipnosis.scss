@@ -4,7 +4,6 @@
  * Contact us at contact@akurey.com
  * @summary styles for the sipnosis component
  */
-@import "../styles/styles.scss";
 
 .sipnosis {
   .mobile__logo {
@@ -47,3 +46,5 @@
     }
   }
 }
+@import "./sipnosisComponents/collapseCard";
+@import "./sipnosisComponents/sipnosisImage";

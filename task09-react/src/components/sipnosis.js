@@ -5,7 +5,7 @@
  * @summary sipnosis component
  */
 import React, { Component } from "react";
-import "./sipnosis.scss";
+import "./sipnosis";
 
 import mobileLogo from "../images/logo.svg";
 

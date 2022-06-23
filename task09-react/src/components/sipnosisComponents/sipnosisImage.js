@@ -5,7 +5,7 @@
  * @summary image component for the sipnosis component
  */
 import React, { Component } from "react";
-import "./sipnosisImage.scss";
+import "./sipnosisImage";
 
 import sipnosisImg from "../../images/sipnosis.svg";
 
