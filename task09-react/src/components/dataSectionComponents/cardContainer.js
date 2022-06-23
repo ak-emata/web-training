@@ -10,6 +10,7 @@ import "./cardContainer";
 
 import CharacterCard from "./cardsComponents/characterCard";
 import IslandCard from "./cardsComponents/islandCard";
+import MistObjectCard from "./cardsComponents/mistObjectCard";
 class CardContainer extends Component {
   constructor(props) {
     super(props);
@@ -49,6 +50,7 @@ class CardContainer extends Component {
               />
             );
             break;
+
           case "Islands":
             elements.push(
               <IslandCard
@@ -59,13 +61,17 @@ class CardContainer extends Component {
               />
             );
             break;
-          //return "islandsContainer";
 
           case "Mist Objects":
-            elements.push(<div></div>);
-
+            elements.push(
+              <MistObjectCard
+                name={element.name}
+                image={element.img}
+                description={element.description}
+                key={element.name}
+              />
+            );
             break;
-          //return "mistObjectsContainer";
 
           default:
             break;
