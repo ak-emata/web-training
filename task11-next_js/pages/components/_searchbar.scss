@@ -1,0 +1,61 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the searchbar component
+ */
+
+.search__bar {
+  margin: 48px $padding-desktop !important;
+  padding: 0 8px !important;
+  border: 1px solid $color-grey-2;
+  border-radius: 6px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+
+  #search__icon {
+    width: 24px;
+    height: 24px;
+    color: $color-grey-1;
+    margin: auto 0;
+  }
+
+  input[type="search"] {
+    flex: 1;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+
+    border: none;
+    background: transparent;
+    margin: 0 !important;
+    padding: 7px 8px !important;
+    color: $color-grey-1;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+
+  input[type="search"]:focus {
+    border: none;
+    outline: none !important;
+  }
+
+  input[type="search"]::placeholder {
+    color: $color-grey-1;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .search__bar {
+    margin: 32px $padding-tablet !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .search__bar {
+    margin: 48px $padding-mobile !important;
+  }
+}

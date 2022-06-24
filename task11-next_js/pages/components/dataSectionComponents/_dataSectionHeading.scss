@@ -1,0 +1,38 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the data section heading component
+ */
+
+.data__section {
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px !important;
+
+    h2 {
+      font: $font;
+      font-weight: 400;
+      font-size: 28px;
+      color: $color-black;
+    }
+
+    button {
+      margin-left: auto;
+      color: $color-dark-01;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .data__section {
+    &__heading {
+      margin-right: $padding-mobile !important;
+    }
+  }
+}
