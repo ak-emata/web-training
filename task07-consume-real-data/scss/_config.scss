@@ -1,0 +1,51 @@
+/**
+* All Rights Reserved
+* This software is property information of AKUREY S.A.
+* Contact us at contact@akurey.com
+* @summary configs for the styles for the implementation of the task #3 of the web training, done by Esteban Mata
+*/
+nav {
+  .navbar-brand {
+    padding-left: $padding-desktop !important;
+  }
+
+  .navbar-collapse {
+    padding-right: $padding-desktop !important;
+  }
+}
+
+* {
+  font-family: $font;
+  font-size: $font-size;
+  font-weight: 700;
+}
+
+@include media-breakpoint-down(lg) {
+  nav {
+    .navbar-brand {
+      padding: 0 !important;
+      padding-right: (2 * $padding-tablet) !important;
+    }
+    .navbar-toggler {
+      margin-left: $padding-tablet !important;
+    }
+    .navbar-collapse {
+      padding-right: 0 !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  nav {
+    .navbar-brand {
+      padding: 0 !important;
+      padding-right: (2 * $padding-mobile) !important;
+    }
+    .navbar-toggler {
+      margin-left: $padding-mobile !important;
+    }
+    .navbar-collapse {
+      padding-right: 0px !important;
+    }
+  }
+}
