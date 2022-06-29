@@ -1,0 +1,29 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the data Section container
+ */
+
+.data__section {
+  margin: 0px $padding-desktop !important;
+  margin-bottom: 48px !important;
+}
+
+@include media-breakpoint-down(lg) {
+  .data__section {
+    margin: 0px $padding-tablet !important;
+    margin-bottom: 48px !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .data__section {
+    margin: 0px !important;
+    margin-left: $padding-mobile !important;
+    margin-bottom: 48px !important;
+  }
+}
+
+@import "./dataSectionComponents/cardContainer";
+@import "./dataSectionComponents/dataSectionHeading";

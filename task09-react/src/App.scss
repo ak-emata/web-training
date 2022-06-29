@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import "@fontsource/roboto";
+@import "@fontsource/roboto-slab";
+
+@import "./styles/variables";
+
+@import "./components/customNavbar";
+@import "./components/sipnosis";
+@import "./components/searchbar";
+@import "./components/dataSection";
+@import "./components/footer";

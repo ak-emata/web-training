@@ -1,0 +1,15 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the navItem component
+ */
+
+.nav-link {
+  font-size: 18px;
+  color: $color-grey-0 !important;
+
+  &--active {
+    color: $color-dark-01 !important;
+  }
+}
