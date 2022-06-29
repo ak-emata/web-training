@@ -2,7 +2,7 @@
  * All Rights Reserved
  * This software is property information of AKUREY S.A.
  * Contact us at contact@akurey.com
- * @summary short description for the file
+ * @summary Auxiliary functions for the task 7 web page
  */
 
 let characters = [];
@@ -76,7 +76,7 @@ const mistObjectComponent = (mistObject) => {
 </a>`;
 };
 
-const populateData = async (cantElements, data, type) => {
+const populateData = async (amountToShow, data, type) => {
   let elem = "";
   let components = "";
 
@@ -93,7 +93,7 @@ const populateData = async (cantElements, data, type) => {
     createComponent = mistObjectComponent;
   }
 
-  for (let pos = 0; pos < cantElements; pos++) {
+  for (let pos = 0; pos < amountToShow; pos++) {
     const element = data[pos];
     components += createComponent(element);
   }
