@@ -1,0 +1,50 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary Styles for the langSelector component
+ */
+
+.lang {
+  &__name {
+    font-size: 18px;
+    color: $color-grey-0 !important;
+    display: none;
+    visibility: hidden;
+    margin: auto;
+  }
+
+  &__selector {
+    background-color: white;
+    border: none;
+    width: 90px;
+    height: 30px;
+    margin: auto;
+
+    &--active {
+      background-color: $color-grey-4;
+    }
+
+    img {
+      position: relative;
+
+      top: -2px;
+      left: 0px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .lang {
+    &__name {
+      display: inline-flex;
+      visibility: visible;
+    }
+
+    &__selector {
+      width: 170px;
+    }
+  }
+}

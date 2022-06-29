@@ -1,0 +1,42 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the card container component
+ */
+
+.card__container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.card__container--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 20px;
+}
+
+@include media-breakpoint-down(lg) {
+  .card__container--grid {
+    gap: 20px 20px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .card__container {
+    gap: 15px;
+  }
+
+  .card__container--grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-right: $padding-mobile !important;
+  }
+}
+
+@import "./cardsComponents/characterCard";
+@import "./cardsComponents/islandCard";
+@import "./cardsComponents/mistObjectCard";

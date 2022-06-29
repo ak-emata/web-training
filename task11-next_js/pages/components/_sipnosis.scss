@@ -1,0 +1,50 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the sipnosis component
+ */
+
+.sipnosis {
+  .mobile__logo {
+    display: none;
+    &--expanded {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .sipnosis {
+    margin: 0 $padding-desktop !important;
+    margin-top: 2px !important;
+    justify-content: center;
+    display: flex;
+    filter: drop-shadow(0px 0px 8px $color-light-01);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sipnosis {
+    width: inherit;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .sipnosis {
+    .mobile__logo {
+      &--expanded {
+        display: block;
+      }
+
+      position: absolute;
+      width: 163px;
+      height: 58px;
+      margin-top: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@import "./sipnosisComponents/collapseCard";
+@import "./sipnosisComponents/sipnosisImage";

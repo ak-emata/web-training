@@ -1,0 +1,60 @@
+/**
+ * All Rights Reserved
+ * This software is property information of AKUREY S.A.
+ * Contact us at contact@akurey.com
+ * @summary styles for the navbar component
+ */
+
+nav {
+  height: $navbar__height;
+}
+
+.container {
+  padding: 0 $padding-desktop !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.navbar {
+  &-nav {
+    width: 100% !important;
+  }
+
+  &-toggler {
+    border: none;
+    padding: 0 !important;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &-collapse {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: white;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .container {
+    padding: 0 $padding-tablet !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .container {
+    padding: 0 $padding-mobile !important;
+  }
+
+  nav {
+    height: $navbar__height--mobile;
+  }
+}
+
+@import "./navbarComponents/langSelector";
+@import "./navbarComponents/navbarLogo";
+@import "./navbarComponents/navItem";
